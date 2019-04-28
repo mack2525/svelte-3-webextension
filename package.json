@@ -1,0 +1,14 @@
+{
+  "name": "browser-extension",
+  "version": "1.0.0",
+  "description": "Cross Platfrom Browser Extension - Supports Chrome, Firefox and Opera",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webextension-polyfill": "^0.4.0"
+  }
+}

@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "npm run deps && npm run build:scripts && npm run init:svelte",
+    "init": "npm run deps && npm run build:scripts && npm run build:svelte",
     "deps": "npm i && cd scripts && npm i",
     "build:scripts": "cd scripts && npm run build",
-    "init:svelte": "cd scripts && node . init",
     "build:svelte": "cd scripts && node . build",
     "dev": "cd scripts && node . dev"
   },

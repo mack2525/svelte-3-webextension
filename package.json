@@ -4,11 +4,24 @@
   "description": "Cross Platfrom Browser Extension - Supports Chrome, Firefox and Opera",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npm run deps && npm run build:scripts && npm run init:svelte",
+    "deps": "npm i && cd scripts && npm i",
+    "build:scripts": "cd scripts && npm run build",
+    "init:svelte": "cd scripts && node . init",
+    "build:svelte": "cd scripts && node . build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webextension-polyfill": "^0.4.0"
+    "webextension-polyfill": "^0.4.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.3.1",
+    "svelte": "^3.0.0"
   }
 }

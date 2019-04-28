@@ -1,1 +1,1 @@
-console.log('Content script did run!');
+console.log('content script run!', browser);
